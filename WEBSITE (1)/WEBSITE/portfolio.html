@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> course work</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+	<style>
+		*{
+			font-family: sans-serif;/*setting font*/
+			list-style: none;
+			padding: 0;
+		}
+		.skills{
+		position: absolute;
+	    top:100px;
+	    left:200px;
+	    margin-left: 600px;
+	    background-color: rgba(0,0,0,0.5);
+	    font-family: monospace;
+	    padding: 20px;
+          }/*setting positon for skill bar below the navigation bar*/
+
+		.skills{
+			width: 500px;
+			margin: 60px auto;
+			color: white;
+		}
+		.skills li{
+			margin: 20px 0;
+		}
+		.bar{
+			background: #353b48;
+			display: block;
+			height: 2px;
+			border: 1px solid rgba(0,0,0,0.3);
+			border-radius: 3px;
+			overflow: hidden;
+			box-shadow: 0 0 10px #2187e7b3;
+			padding: 4px;
+		}
+		.bar span{
+			height: 2px;
+			float: left;
+			background: #2187e7;
+		}
+		.python{
+			width: 90%;
+			animation: python 2s;
+		}
+		.java{
+			width: 65%;
+			animation: java 2s;
+		}
+
+		.wordpress{
+			width: 80%;
+			animation: wordpress 2s;
+		}
+
+
+@keyframes python{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width:90%;
+	}
+}
+	@keyframes java{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width:65%;
+	}
+}
+	@keyframes wordpress{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width:80%;
+	}
+}/*setting animation for skills bar*/
+}
+.button{
+	position: absolute;
+	top:600px;
+	left:200px;
+}
+
+	</style>
+}
+}
+</head>
+<body>
+
+	<header>
+		<nav>
+
+
+				<ul class="main-nav 4 animated slideInDown">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="portfolio.html">PORTFOLIO AND CV</a></li>
+					<li><a href="research.html">RESEARCH</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+
+				</ul>
+				<div class="skills">
+					<h2>Prashanna Pantha</h2>
+					<br>
+					<hr>
+					<br>
+		<h3>My Skills</h3>
+		<li>
+
+			<h3>Python</h3><span class="bar"><span class="python"></span></span>
+		</li>
+		<li>
+			<h3>Java</h3><span class="bar"><span class="java"></span></span>
+		</li>
+		<li>
+			<h3>Wordpress</h3><span class="bar"><span class="wordpress"></span></span>
+		</li>
+	</div>
+	<div class="button">
+		<a href="cv.html"><button class="btn1">Click Here To See My CV!!</button></a><!--linking cv in the page-->
+	</div>
+
+
+
+		</nav>
+
+
+	</header>
+
+</body>
+</html>

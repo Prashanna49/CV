@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> course work</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+   <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		button{
+			background: none;
+	border:1px solid #fff;
+	padding:10px 30px;
+	font-size: 13px;
+	transition:0.6s ease;
+	border-radius: 5px;
+}
+		 button:hover{
+	background-color: white;
+	color: blue;
+}
+#test2{
+	position: absolute;
+	top:150px;
+	left:200px;
+	margin-left: 600px;
+	background-color: rgba(0,0,0,0.5);
+	font-family: monospace;
+	padding: 20px;
+}
+
+.contactcolorchange{
+	animation: colorchangename 1s infinite;
+}
+
+@keyframes colorchangename{
+	0%{color: red;}
+	25%{color: #bf55ec;}
+	50%{color: white; }
+	100%{color: #bf55ec;}
+}
+.colorchange2{
+	font-size: 20px;
+	font-family: cursive;
+	color: blue;
+}
+footer{
+	position: absolute;
+	top:730px;
+	left:600px;
+	font-size: 20px;
+	color: red;
+}
+
+	</style>
+}
+}
+</head>
+<body>
+
+<header>
+		<nav>
+
+				<ul class="main-nav 4 animated slideInDown">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="portfolio.html">PORTFOLIO AND CV</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+
+				</ul>
+				<div id="test">
+
+					<h3 style="font-family: copperplate gothic light">-----------BE IN TOUCH-----------</h3><br>
+					<p>To contact  us please fill the form below</p><br>
+			<form name="messageForm" onsubmit="validateForm()">
+				First Name:<br>
+				<input type="text" name="firstname">
+				<br><br>
+				Last Name:<br>
+				<input type="text" name="lastname">
+				<br><br>
+				Email:<br>
+				 <input type="text" name="email">
+				 <br><br>
+				 Country:<br>
+				<input type="text" name="country">
+				<br><br>
+                Gender:<input type="radio" name="gender" value="male">Male<input type="radio" name="gender" value="female">Female
+				<br><br>
+				<textarea name="message" cols="30" placeholder="Write message"></textarea><br><br>
+				<button onclick="validateForm()">Send</button>
+
+				<script>
+			function validateForm(){
+				var fname = document.forms["messageForm"]["firstname"].value;
+				var lname = document.forms["messageForm"]["lastname"].value;
+				var E_mail=document.forms["messageForm"]["email"].value;
+				var message=document.forms["messageForm"]["message"].value;
+
+				//checking if the field are left empty
+				if(fname =="" ||  E-mail==""){
+					alert("Field are left empty, Please fill the form.");
+					return false;
+				}else{
+					alert("Thank you for your feedback");
+				}
+
+			}
+		</script>
+
+
+			</form></div>
+
+			</div>
+			<div id="test2">
+				<p>If you have any queries, please mail at:</p>
+				<p class="colorchange2">prashannapantha019@gmail.com</p><br>
+				<p class="title1"><span class="contactcolorchange">Prashanna Pantha</span></p>
+				<p>Belbas, rupandehi<br><br>Get Social:</p><br>
+				<a href="https://www.facebook.com/prashanna.panta/"><i class="fa fa-facebook-square fa-3x"></i></a>
+		       <a href="https://www.instagram.com/prashanna49/?utm_source=qr"><i class="fa fa-instagram fa-3x"></i></a>
+
+			</div>
+			<div>
+				<footer>&copy;All rights reserved 2021 Inc. Prashanna Pantha</footer>
+			</div>
+		</nav>
+	    </header>
+
+</body>
+</html>

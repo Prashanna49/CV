@@ -1,0 +1,33 @@
+body{
+	background-image:url("images/photo.jpeg");
+	background-size: cover;
+	height: 100vh;
+}
+.name{
+	position:absolute;
+	left:100px; 
+	top:200px;
+}
+img{
+	border-radius: 70%;
+	height: 100x;
+}
+.main-nav{
+	float: right;
+	margin-top: 60px;
+}
+.main-nav li{
+display: inline-block;
+list-style: none;
+margin-left: 40px;
+}
+.main-nav li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 90%;
+	font-weight: 100;
+
+}
+.main-nav li a:hover{
+	border-bottom: 2px solid#bf55ec;
+}
